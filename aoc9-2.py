@@ -20,7 +20,7 @@ for line in instr.split('\n'):
     cities.add( parts[2] )
 
     
-minlen = min(
+minlen = max(
              sum(
                  distances[ (route[i],route[i+1]) ]
                      for i in range( len(route) - 1 )
